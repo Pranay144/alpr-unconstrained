@@ -42,7 +42,7 @@ for img_file in img_files:
 
 			if isfile(lp_label):
 
-				Llp_shapes = readShapes(lp_label)
+				Llp_shapes = readShapes(lp_label)	
 				pts = Llp_shapes[0].pts*lcar.wh().reshape(2,1) + lcar.tl().reshape(2,1)
 				ptspx = pts*np.array(I.shape[1::-1],dtype=float).reshape(2,1)
 				draw_losangle(I,ptspx,RED,3)

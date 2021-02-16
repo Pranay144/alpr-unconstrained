@@ -80,7 +80,7 @@ check_dir $output_dir
 retval=$?
 if [ $retval -eq 0 ]
 then
-	mkdir -p $output_dir
+	mkdir $output_dir
 fi
 
 # End if any error occur
